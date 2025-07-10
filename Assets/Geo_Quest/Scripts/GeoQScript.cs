@@ -1,14 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
-using JetBrains.Annotations;
+
 using UnityEngine;
 
-public class GeoQScript : MonoBehaviour{
+public class GeoQScript : MonoBehaviour {
     int var = 3;
+    public int speed = 3;
+
+    private Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
-      
+        rb = GetComponent<Rigidbody2D>();
+
 
 
 
@@ -17,7 +19,16 @@ public class GeoQScript : MonoBehaviour{
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(var);
-        var++;
+        float xInput = Input.GetAxis("Horizontal");
+        rb.velocity = new Vector2(xInput * speed, rb.velocity.y);
     }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Trigger Hit");
+    }
+
+   
 }
+
