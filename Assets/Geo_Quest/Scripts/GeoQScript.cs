@@ -1,9 +1,11 @@
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class GeoQScript : MonoBehaviour {
+public class GeoQScript : MonoBehaviour 
+{
     int var = 3;
-    public int speed = 3;
+    public int speed = 9;
 
     private Rigidbody2D rb;
     // Start is called before the first frame update
@@ -26,9 +28,29 @@ public class GeoQScript : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Trigger Hit");
+        Debug.Log("Hit");
+        switch (collision.tag)
+      
+        {
+           
+            case "Win":
+                {
+                    break;
+                }
+            case "Lose":   
+                {
+                    break;
+                }
+            case "Death":
+                {
+                    string thisLevel = SceneManager.GetActiveScene().name;
+                    SceneManager.LoadScene(thisLevel);
+                    break;
+                }
+          
+
+        }
     }
 
-   
-}
 
+}
