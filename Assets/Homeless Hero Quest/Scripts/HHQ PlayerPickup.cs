@@ -9,7 +9,7 @@ public class HHQPlayerPickup : MonoBehaviour
     public KeyCode pickupKey = KeyCode.E;
 
     private GameObject heldObject;
-    private Rigidbody heldRB;
+    private Rigidbody2D heldRB;
     public bool facingLeft;
     private float facingMultiplier;
 
@@ -40,20 +40,23 @@ public class HHQPlayerPickup : MonoBehaviour
 
     void TryPickupObject()
     {
-        RaycastHit2D hit;
-        if (Physics2D.Raycast(transform.position,(Vector2) transform.position + (Vector2.right * facingMultiplier), out hit, pickupRange,))
+        RaycastHit2D hit = Physics2D.Raycast(transform.position,  Vector2.right * facingMultiplier, pickupRange);
+        if (hit)
         {
+            Debug.Log(hit.transform.tag);
             if (hit.collider.CompareTag("Pickup"))
             {
+                Debug.Log("find error");
                 heldObject = hit.collider.gameObject;
-                heldRB = heldObject.GetComponent<Rigidbody>();
+                heldRB = heldObject.GetComponent<Rigidbody2D>();
 
                 if (heldRB != null)
                 {
-                    heldRB.useGravity = false;
+                    heldRB.gravityScale = 0;
                     heldRB.freezeRotation = true;
-                    heldRB.velocity = Vector3.zero;
-                    heldRB.angularVelocity = Vector3.zero;
+                    heldRB.velocity = Vector2.zero;
+                    heldRB.angularVelocity = 0f;
+                    heldRB.rotation = 0f;
                 }
             }
         }
@@ -74,11 +77,16 @@ public class HHQPlayerPickup : MonoBehaviour
     {
         if (heldRB != null)
         {
-            heldRB.useGravity = true;
+            heldRB.gravityScale = 1;
             heldRB.freezeRotation = false;
         }
 
         heldObject = null;
         heldRB = null;
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(transform.position, (Vector2)transform.position + (Vector2.right * facingMultiplier) * pickupRange);
     }
 }
