@@ -4,13 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Water
   - Death
   - Health
   - Coin
   - Ground
   - Finish3
   - Finish4
+  - Enemy
+  - TalkZone
+  - Bullet
+  - BoostSpeed
   layers:
   - Default
   - TransparentFX
@@ -20,7 +23,7 @@ TagManager:
   - UI
   - Coin
   - Ground
-  - 
+  - BoostSpeed
   - 
   - 
   - 
