@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb5a687511d79e74c907f0d58764c336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextLevel: RubenScene
+  NextLevel: FirstScene
 --- !u!4 &51128837
 Transform:
   m_ObjectHideFlags: 0
@@ -226,8 +226,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Start
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cb9cabbf3bc64ca4dbe8d9e70fac5fd1, type: 2}
-  m_sharedMaterial: {fileID: 8011503911039344564, guid: cb9cabbf3bc64ca4dbe8d9e70fac5fd1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -426,7 +426,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 90da556dfa707d941a331ccd6de64d7f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6e40d848365514f4e8d1818442465cc0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -503,8 +503,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Homeless Hero Quest
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cb9cabbf3bc64ca4dbe8d9e70fac5fd1, type: 2}
-  m_sharedMaterial: {fileID: 8011503911039344564, guid: cb9cabbf3bc64ca4dbe8d9e70fac5fd1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuLevel.unity
     guid: 2fa55462fc719a848b33dd6097f67562
   - enabled: 0
-    path: Assets/Pixel_Quest/Scenes/Pixel_Quest_Level_1.unity
+    path: Assets/Pixel_Quest/PreFabs/Scenes/Pixel_Quest_Level_1.unity
     guid: f3cc5755a7b864a49822472fa2cb9533
   - enabled: 0
     path: Assets/Geo_Quest/Scenes/Scene_1o1.unity
@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Geo_Quest/Scenes/Scene_4.unity
     guid: 5be9f6b86a914914692dc74891a8ff6b
   - enabled: 0
-    path: Assets/Pixel_Quest/Scenes/Pixel_Quest_TestLevel.unity
+    path: Assets/Pixel_Quest/PreFabs/Scenes/Pixel_Quest_TestLevel.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
     path: Assets/Scenes/Level_2.unity
@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Homeless Hero Quest/ruben/Scenes/FourthTrain.unity
     guid: 8e55f243918ded24e9c383cb1ce96ba2
+  - enabled: 1
+    path: Assets/Homeless Hero Quest/ruben/Scenes/SecondScene.unity
+    guid: 2dfa5492402a14b43bb061fc6d49ae21
   m_configObjects: {}
