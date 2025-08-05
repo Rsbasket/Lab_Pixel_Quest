@@ -1,15 +1,14 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
-public class HHQscript : MonoBehaviour
+public class HHQSceneHandler : MonoBehaviour
 {
-    int var = 3;
     public int speed = 9;
-    public string Train1Scene = "Scene_2";
-    private SpriteRenderer sr;
 
+    public string Train1Scene = "FirstTrain";
+    public string Train2Scene = "SecondTrain";
+
+    private SpriteRenderer sr;
     private Rigidbody2D rb;
 
     void Start()
@@ -24,24 +23,28 @@ public class HHQscript : MonoBehaviour
         rb.velocity = new Vector2(xInput * speed, rb.velocity.y);
     }
 
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Hit");
+        Debug.Log("Hit: " + collision.tag);
+
         switch (collision.tag)
         {
             case "Win":
-                break;
-            case "Lose":
-                break;
-            case "Death":
-                string thisLevel = SceneManager.GetActiveScene().name;
-                SceneManager.LoadScene(thisLevel);
-                break;
-            case "Finish":
-                SceneManager.LoadScene(nextLeveltwo);
+                SceneManager.LoadScene(Train1Scene);
                 break;
 
+            case "Lose":
+                SceneManager.LoadScene(Train2Scene);
+                break;
+
+            case "Death":
+                string currentScene = SceneManager.GetActiveScene().name;
+                SceneManager.LoadScene(currentScene);
+                break;
+
+            case "Finish":
+                SceneManager.LoadScene(Train2Scene); // Or Train1Scene based on your logic
+                break;
         }
     }
 }
