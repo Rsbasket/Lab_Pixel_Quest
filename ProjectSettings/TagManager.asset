@@ -14,6 +14,8 @@ TagManager:
   - TalkZone
   - Bullet
   - BoostSpeed
+  - PickUp
+  - Pickup
   layers:
   - Default
   - TransparentFX

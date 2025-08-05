@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 353452582}
   - component: {fileID: 353452584}
   - component: {fileID: 353452583}
+  - component: {fileID: 353452585}
   m_Layer: 0
   m_Name: trains
   m_TagString: Finish
@@ -690,6 +691,19 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &353452585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353452581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fce58766db6e424dace1db891737c10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Finish: FirstScene
 --- !u!1 &608408170
 GameObject:
   m_ObjectHideFlags: 0

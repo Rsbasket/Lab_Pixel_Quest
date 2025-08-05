@@ -2525,7 +2525,7 @@ Transform:
   m_GameObject: {fileID: 274523500}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.765704, y: 5.0037, z: -10}
+  m_LocalPosition: {x: 5.3321967, y: 5.00334, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2603,9 +2603,119 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths: []
+  m_ColliderPaths:
+  - m_Collider: {fileID: 325715176}
+    m_ColliderPaths:
+    - - X: 10017000
+        Y: 10000000
+      - X: -10017000
+        Y: 10000000
+      - X: -10017000
+        Y: -10000000
+      - X: 10017000
+        Y: -10000000
+    - - X: 30051000
+        Y: 10000000
+      - X: 10017002
+        Y: 10000000
+      - X: 10017002
+        Y: -10000000
+      - X: 30051000
+        Y: -10000000
+    - - X: 90153000
+        Y: 10000000
+      - X: 30051002
+        Y: 10000000
+      - X: 30051002
+        Y: -10000000
+      - X: 90153000
+        Y: -10000000
+    - - X: 100170000
+        Y: 10000000
+      - X: 90153008
+        Y: 10000000
+      - X: 90153008
+        Y: -10000000
+      - X: 100170000
+        Y: -10000000
+    - - X: 120204000
+        Y: 10000000
+      - X: 100170008
+        Y: 10000000
+      - X: 100170008
+        Y: -10000000
+      - X: 120204000
+        Y: -10000000
+    - - X: 140238000
+        Y: 10000000
+      - X: 120204008
+        Y: 10000000
+      - X: 120204008
+        Y: -10000000
+      - X: 140238000
+        Y: -10000000
+    - - X: 160272000
+        Y: 10000000
+      - X: 140238016
+        Y: 10000000
+      - X: 140238016
+        Y: -10000000
+      - X: 160272000
+        Y: -10000000
+    - - X: -140238016
+        Y: 10000000
+      - X: -330561024
+        Y: 10000000
+      - X: -330561024
+        Y: -10000000
+      - X: -140238016
+        Y: -10000000
+    - - X: -120204008
+        Y: 10000000
+      - X: -140238000
+        Y: 10000000
+      - X: -140238000
+        Y: -10000000
+      - X: -120204008
+        Y: -10000000
+    - - X: -100170008
+        Y: 10000000
+      - X: -120204000
+        Y: 10000000
+      - X: -120204000
+        Y: -10000000
+      - X: -100170008
+        Y: -10000000
+    - - X: -90153008
+        Y: 10000000
+      - X: -100170000
+        Y: 10000000
+      - X: -100170000
+        Y: -10000000
+      - X: -90153008
+        Y: -10000000
+    - - X: -30051002
+        Y: 10000000
+      - X: -90153000
+        Y: 10000000
+      - X: -90153000
+        Y: -10000000
+      - X: -30051002
+        Y: -10000000
+    - - X: -10017002
+        Y: 10000000
+      - X: -30051000
+        Y: 10000000
+      - X: -30051000
+        Y: -10000000
+      - X: -10017002
+        Y: -10000000
   m_CompositePaths:
-    m_Paths: []
+    m_Paths:
+    - - {x: 16.027172, y: -1}
+      - {x: 16.027172, y: 1}
+      - {x: -33.056103, y: 0.99997073}
+      - {x: -33.056072, y: -1}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
@@ -2668,7 +2778,7 @@ TilemapCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
@@ -4378,6 +4488,7 @@ GameObject:
   - component: {fileID: 425930868}
   - component: {fileID: 425930867}
   - component: {fileID: 425930869}
+  - component: {fileID: 425930874}
   - component: {fileID: 425930872}
   m_Layer: 0
   m_Name: 'train enterance '
@@ -4594,6 +4705,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &425930874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425930865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fce58766db6e424dace1db891737c10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Finish: FirstTrain
 --- !u!1 &485019519
 GameObject:
   m_ObjectHideFlags: 0
@@ -5069,7 +5193,7 @@ Transform:
   m_GameObject: {fileID: 649464178}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.98, y: 2.7600007, z: -10}
+  m_LocalPosition: {x: 11.72, y: 2.7600007, z: -10}
   m_LocalScale: {x: 0.2278125, y: 0.3125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14107,7 +14231,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1577615789255329678, guid: be1e45411795bbc44ae101d8f5d240f9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.98
+      value: 11.72
       objectReference: {fileID: 0}
     - target: {fileID: 1577615789255329678, guid: be1e45411795bbc44ae101d8f5d240f9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14171,6 +14295,10 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 88be1803431c8af46b2cfae072419152, type: 2}
     - target: {fileID: 6907570495614011202, guid: be1e45411795bbc44ae101d8f5d240f9, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907570495614011202, guid: be1e45411795bbc44ae101d8f5d240f9, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
