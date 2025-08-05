@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HHQPlayerMovement : MonoBehaviour
+public class HHQscript : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float verticalSpeed = 3f;
@@ -20,10 +20,10 @@ public class HHQPlayerMovement : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
 
-        
+
         HandlePlayerFlip(horizontalInput);
 
-       
+
         HandleVerticalMovement();
     }
 
@@ -33,16 +33,16 @@ public class HHQPlayerMovement : MonoBehaviour
         if (horizontalInput < 0)
         {
             Pickup.facingLeft = true;
-            transform.localScale = new Vector3(-1, 1, 1); 
+            transform.localScale = new Vector3(-1, 1, 1);
         }
         else if (horizontalInput > 0)
         {
             Pickup.facingLeft = false;
-            transform.localScale = new Vector3(1, 1, 1); 
+            transform.localScale = new Vector3(1, 1, 1);
         }
     }
 
-    
+
     private void HandleVerticalMovement()
     {
         float verticalInput = 0f;
@@ -51,12 +51,12 @@ public class HHQPlayerMovement : MonoBehaviour
         {
             verticalInput = 1f;
         }
-        else if (Input.GetKey(KeyCode.S)) 
+        else if (Input.GetKey(KeyCode.S))
         {
             verticalInput = -1f;
         }
 
-        
+
         rb.velocity = new Vector2(rb.velocity.x, verticalInput * verticalSpeed);
     }
 }
