@@ -12,7 +12,7 @@ public class TrainAwareMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        sr = GetComponent<SpriteRenderer>();
+        sr = GetComponentInChildren<SpriteRenderer>();
 
         string sceneName = SceneManager.GetActiveScene().name;
         allowVerticalMovement = (sceneName == "FirstTrain" || sceneName == "SecondTrain" || sceneName == "ThirdTrain");
@@ -28,11 +28,11 @@ public class TrainAwareMovement : MonoBehaviour
         // Flip sprite depending on movement direction
         if (xInput > 0)
         {
-            sr.flipX = false; // Facing right (normal)
+            sr.flipX = true; // Facing right (normal)
         }
         else if (xInput < 0)
         {
-            sr.flipX = true;  // Facing left (flipped)
+            sr.flipX = false;  // Facing left (flipped)
         }
     }
 }
