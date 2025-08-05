@@ -13351,10 +13351,10 @@ TextureImporter:
       name: Spritesheet_631
       rect:
         serializedVersion: 2
-        x: 192
-        y: 507
-        width: 32
-        height: 32
+        x: 196
+        y: 472
+        width: 48
+        height: 69
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -16858,10 +16858,10 @@ TextureImporter:
       name: Spritesheet_798
       rect:
         serializedVersion: 2
-        x: 640
-        y: 443
-        width: 32
-        height: 32
+        x: 636
+        y: 442
+        width: 17
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -38619,7 +38619,7 @@ TextureImporter:
         width: 268
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
