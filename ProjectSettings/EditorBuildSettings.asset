@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level_2.unity
     guid: f9555ef8cf6b50447922872cea2af702
   - enabled: 1
-    path: Assets/Homeless Hero Quest/ruben/Scenes/RubenScene.unity
+    path: Assets/Homeless Hero Quest/ruben/Scenes/FirstScene.unity
     guid: 49480b9b95fbad8468610e99bdbd7893
   - enabled: 1
     path: Assets/Homeless Hero Quest/ruben/Scenes/FirstTrain.unity
