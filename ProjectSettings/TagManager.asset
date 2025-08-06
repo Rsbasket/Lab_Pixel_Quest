@@ -16,6 +16,7 @@ TagManager:
   - BoostSpeed
   - PickUp
   - Pickup
+  - Homeless
   layers:
   - Default
   - TransparentFX
