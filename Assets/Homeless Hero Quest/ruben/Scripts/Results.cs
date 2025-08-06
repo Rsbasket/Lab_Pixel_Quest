@@ -9,10 +9,8 @@ public class ResultsScreen : MonoBehaviour
     void Start()
     {
         int stored = GameManager.Instance.totalDelivered;
-        int stillCarrying = GameManager.Instance.homelessCount;
-        int finalTotal = stored + stillCarrying;
 
-        resultsText.text = "You helped " + finalTotal + " homeless people!";
+        resultsText.text = "You helped " + stored + " homeless people!";
     }
 
     public void ReturnToStart()
