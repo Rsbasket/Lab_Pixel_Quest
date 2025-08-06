@@ -6,7 +6,7 @@ public class HomelessCollector : MonoBehaviour
 {
     public int homelessCount = 0;
 
-    public TextMeshProUGUI counterText;  // This will just show the number
+    public TextMeshProUGUI counterText;
     public TextMeshProUGUI timerText;
 
     private float timer = 60f;
@@ -54,12 +54,15 @@ public class HomelessCollector : MonoBehaviour
     void UpdateTimerUI()
     {
         if (timerText != null)
-            timerText.text = "Time Left: " + Mathf.Ceil(timer) + "s";
+            timerText.text = Mathf.Ceil(timer).ToString();
     }
 
     void EndGame()
     {
-        Debug.Log("Time's up! Game Over!");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // Save the score to pass it to the next scene
+        PlayerPrefs.SetInt("HomelessCount", homelessCount);
+
+        // Load the ResultsScene
+        SceneManager.LoadScene("ResultsScene");
     }
 }
