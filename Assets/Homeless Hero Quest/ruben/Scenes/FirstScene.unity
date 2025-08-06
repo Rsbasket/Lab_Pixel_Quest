@@ -343,7 +343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   homelessCount: 0
   totalDelivered: 0
-  timer: 60
+  timer: 45
 --- !u!4 &31756190
 Transform:
   m_ObjectHideFlags: 0
@@ -5354,7 +5354,7 @@ Transform:
   m_GameObject: {fileID: 649464178}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25.84, y: 2.7600007, z: -10}
+  m_LocalPosition: {x: -25.84, y: 2.7210007, z: -10}
   m_LocalScale: {x: 0.2278125, y: 0.3125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5372,7 +5372,6 @@ GameObject:
   - component: {fileID: 707277430}
   - component: {fileID: 707277432}
   - component: {fileID: 707277431}
-  - component: {fileID: 707277434}
   - component: {fileID: 707277433}
   m_Layer: 0
   m_Name: Scene changer hh Door
@@ -5576,18 +5575,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2532692, y: 1.9858217}
   m_EdgeRadius: 0
---- !u!114 &707277434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 707277429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b78093e240fc4c441ab5415b69441482, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &756932688
 GameObject:
   m_ObjectHideFlags: 0
@@ -14617,7 +14604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1577615789255329678, guid: be1e45411795bbc44ae101d8f5d240f9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.56
+      value: 1.521
       objectReference: {fileID: 0}
     - target: {fileID: 1577615789255329678, guid: be1e45411795bbc44ae101d8f5d240f9, type: 3}
       propertyPath: m_LocalPosition.z

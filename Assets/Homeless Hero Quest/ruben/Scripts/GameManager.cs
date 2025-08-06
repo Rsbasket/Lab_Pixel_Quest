@@ -4,20 +4,20 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public int homelessCount = 0;       // Number currently carried
-    public int totalDelivered = 0;      // Number dropped off at shelters
-    public float timer = 60f;           // Shared timer across scenes
+    public int homelessCount = 0;
+    public int totalDelivered = 0;
+    public float timer = 60f;
 
     void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // Persist between scenes
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            Destroy(gameObject); // Prevent duplicates
+            Destroy(gameObject);
         }
     }
 }

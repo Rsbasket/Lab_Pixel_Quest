@@ -4,11 +4,8 @@ public class ShelterDoor : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Touched by: " + other.name);
-
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player collided with shelter.");
             DepositHomeless();
         }
     }
@@ -25,7 +22,7 @@ public class ShelterDoor : MonoBehaviour
         }
         else
         {
-            Debug.Log("Player has no homeless people to deliver.");
+            Debug.Log("Player touched door but had no homeless people.");
         }
     }
 }
