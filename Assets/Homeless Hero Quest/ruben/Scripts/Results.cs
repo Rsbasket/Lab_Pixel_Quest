@@ -8,8 +8,11 @@ public class ResultsScreen : MonoBehaviour
 
     void Start()
     {
-        int count = PlayerPrefs.GetInt("HomelessCount", 0);
-        resultsText.text = "You helped " + count + " homeless people!";
+        int stored = GameManager.Instance.totalDelivered;
+        int stillCarrying = GameManager.Instance.homelessCount;
+        int finalTotal = stored + stillCarrying;
+
+        resultsText.text = "You helped " + finalTotal + " homeless people!";
     }
 
     public void ReturnToStart()
@@ -17,4 +20,6 @@ public class ResultsScreen : MonoBehaviour
         SceneManager.LoadScene("Intro Scene");
     }
 }
+
+
 

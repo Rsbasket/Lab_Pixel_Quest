@@ -4,12 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class HomelessCollector : MonoBehaviour
 {
-    public int homelessCount = 0;
-
     public TextMeshProUGUI counterText;
     public TextMeshProUGUI timerText;
 
-    private float timer = 60f;
     private bool timerRunning = true;
 
     void Start()
@@ -22,11 +19,12 @@ public class HomelessCollector : MonoBehaviour
     {
         if (timerRunning)
         {
-            timer -= Time.deltaTime;
+            // Use GameManager's timer
+            GameManager.Instance.timer -= Time.deltaTime;
 
-            if (timer <= 0f)
+            if (GameManager.Instance.timer <= 0f)
             {
-                timer = 0f;
+                GameManager.Instance.timer = 0f;
                 timerRunning = false;
                 EndGame();
             }
@@ -40,7 +38,10 @@ public class HomelessCollector : MonoBehaviour
         if (other.CompareTag("Homeless"))
         {
             Destroy(other.gameObject);
-            homelessCount++;
+
+            // Update the count in GameManager
+            GameManager.Instance.homelessCount++;
+
             UpdateCounterUI();
         }
     }
@@ -48,21 +49,18 @@ public class HomelessCollector : MonoBehaviour
     void UpdateCounterUI()
     {
         if (counterText != null)
-            counterText.text = homelessCount.ToString();
+            counterText.text = GameManager.Instance.homelessCount.ToString();
     }
 
     void UpdateTimerUI()
     {
         if (timerText != null)
-            timerText.text = Mathf.Ceil(timer).ToString();
+            timerText.text = Mathf.Ceil(GameManager.Instance.timer).ToString();
     }
 
     void EndGame()
     {
-        // Save the score to pass it to the next scene
-        PlayerPrefs.SetInt("HomelessCount", homelessCount);
-
-        // Load the ResultsScene
+        PlayerPrefs.SetInt("HomelessCount", GameManager.Instance.homelessCount);
         SceneManager.LoadScene("ResultsScene");
     }
 }
