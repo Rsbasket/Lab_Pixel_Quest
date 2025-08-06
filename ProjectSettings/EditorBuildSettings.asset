@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Homeless Hero Quest/ruben/Scenes/SecondScene.unity
     guid: 2dfa5492402a14b43bb061fc6d49ae21
+  - enabled: 1
+    path: Assets/Homeless Hero Quest/ruben/Scenes/ResultsScene.unity
+    guid: faede3650b7ad90448c9a1f0179ec792
   m_configObjects: {}
