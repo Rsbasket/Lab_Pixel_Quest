@@ -10,7 +10,7 @@ public class ResultsScreen : MonoBehaviour
     {
         int stored = GameManager.Instance.totalDelivered;
 
-        resultsText.text = "You helped " + stored + " homeless people!";
+        resultsText.text = "You brought " + stored + " homeless people to the Shelter!";
     }
 
     public void ReturnToStart()

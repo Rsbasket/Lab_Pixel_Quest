@@ -212,52 +212,72 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3712956212608350754, guid: cc9b67f9075a85a4e8644776b69999de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.68132323
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712956212608350754, guid: cc9b67f9075a85a4e8644776b69999de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6913
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712956212608350754, guid: cc9b67f9075a85a4e8644776b69999de, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.72
+      value: -0.0598
       objectReference: {fileID: 0}
     - target: {fileID: 3712956212608350754, guid: cc9b67f9075a85a4e8644776b69999de, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.69
+      value: -0.184
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712956212608350754, guid: cc9b67f9075a85a4e8644776b69999de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3712956212608350754, guid: cc9b67f9075a85a4e8644776b69999de, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99999565
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712956212608350754, guid: cc9b67f9075a85a4e8644776b69999de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712956212608350754, guid: cc9b67f9075a85a4e8644776b69999de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3712956212608350754, guid: cc9b67f9075a85a4e8644776b69999de, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0029500127
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3712956212608350754, guid: cc9b67f9075a85a4e8644776b69999de, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0.338
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6106369433974535190, guid: cc9b67f9075a85a4e8644776b69999de, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.886969
+      value: 23.8
       objectReference: {fileID: 0}
     - target: {fileID: 6106369433974535190, guid: cc9b67f9075a85a4e8644776b69999de, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.7277677
+      value: 4.61
       objectReference: {fileID: 0}
     - target: {fileID: 6106369433974535190, guid: cc9b67f9075a85a4e8644776b69999de, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.009245753
+      value: -0.531
       objectReference: {fileID: 0}
     - target: {fileID: 6106369433974535190, guid: cc9b67f9075a85a4e8644776b69999de, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99368715
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6106369433974535190, guid: cc9b67f9075a85a4e8644776b69999de, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6106369433974535190, guid: cc9b67f9075a85a4e8644776b69999de, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6106369433974535190, guid: cc9b67f9075a85a4e8644776b69999de, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.1121863
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6106369433974535190, guid: cc9b67f9075a85a4e8644776b69999de, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -269,7 +289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6106369433974535190, guid: cc9b67f9075a85a4e8644776b69999de, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 12.883
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8075375824347733932, guid: cc9b67f9075a85a4e8644776b69999de, type: 3}
       propertyPath: m_Name
@@ -11955,7 +11975,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
